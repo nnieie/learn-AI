@@ -182,7 +182,7 @@ CATEGORY_PREFIX_MAP = {
 
 ### Python 爬虫
 
-爬虫推荐的教程包含内容较多，大家根据考核需求自行选择。
+爬虫推荐的教程包含内容较多，根据考核需求自行选择。
 
 - 爬虫
   - [B 站视频](https://www.bilibili.com/video/BV1Yh411o7Sz)看到药企实战前，注意阿贾克斯
