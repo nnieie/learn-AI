@@ -122,6 +122,8 @@ weijianxian 是一只可爱的猫娘，她对 bs4 的不优雅颇有微词。碰
 - `precipitation_sum`（降水量）
 - `sunshine_duration`（日照时长）
 
+> 你可能需要科学环境才能访问此网站。
+>
 > 如果你觉得作业 4 太简单了，可以来看看 bonus 任务。
 
 ### Bonus - 爬取 B-Wiki 界面
@@ -167,15 +169,15 @@ CATEGORY_PREFIX_MAP = {
 以及请求参数
 
 ```python
-        params = {
-            "action": "query",
-            "list": "categorymembers",
-            "cmtitle": category,
-            "cmlimit": "500",
-            "format": "json",
-            "formatversion": "2",
-            "maxlag": "5"
-        }
+params = {
+    "action": "query",
+    "list": "categorymembers",
+    "cmtitle": category,
+    "cmlimit": "500",
+    "format": "json",
+    "formatversion": "2",
+    "maxlag": "5"
+}
 ```
 
 ## 推荐教程与参考资料
