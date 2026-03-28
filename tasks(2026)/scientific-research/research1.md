@@ -1,6 +1,10 @@
-# Research 1 - 机器学习
+# Research 1 - 从机器学习到深度学习
+
+> 预计耗时：60 - 90 天
 
 ## 学习目的
+
+如果你选择了偏科研的方向，那么意味着你未来想做科研，进实验室，保研，或者是单纯对人工智能底层感兴趣。
 
 在前三轮学习中，你已经掌握了 Python 编程基础，爬虫以及和基本的数据分析。
 
@@ -8,35 +12,26 @@
 
 无论是 CV、NLP 还是其他方向，它们的训练都基于共同的核心理论基础——反向传播算法。
 
-诚然，使用 PyTorch 等现代成熟的深度学习框架可以有效简化实现过程。
+诚然，使用 PyTorch 等现代成熟的深度学习框架可以有效简化实现过程。然而对于科研而言，了解底层是必要的。
 
-然而西二在线的目标不是培养简单的工具使用者，而是培养具备扎实理论基础和实践能力的实践者、研究者。
+当你学完了 Research 1 的内容，恭喜你，你已经具备了复现顶会论文的能力了。
 
-作为计算机专业的学生，我们的竞争力在于深入理解基本原理，并具备从零实现算法、调试和优化模型的能力。
-
-本轮考核的目的是让你掌握一些基本的机器学习算法。
-
-对于基于树的复杂集成算法（如随机森林、XGBoost、决策树），由于其实现逻辑与神经网络差异较大，只需要了解原理并掌握 [scikit-learn](https://scikit-learn.org/stable/) 即可，无需从零实现。
-
-但对于线性分类器（k-NN, SVM, Softmax），它们是理解神经网络损失函数和梯度下降的基石，你需要在作业 1 中实现。
-
-这里简要解释传统机器学习与深度学习的区别。二者最核心的区别在于如何学习和利用数据的「特征」。
-
-例如，决策树和随机森林基于预先定义的特征（如气象状态、温度范围等），通过一系列逻辑判断逐步推理出结论，整个决策过程直观且可解释。
-
-而支持向量机则更为抽象，它试图在数据之间找到一个最优的分界超平面。这种通过数学优化寻找复杂边界的思想，与神经网络通过调整权重来划分数据的逻辑具有相似性。
-
-深度学习最根本的优势在于其强大的「自动特征提取」能力。我们不再需要手动设计特征，深度神经网络能够从原始数据中逐层抽象和学习出解决问题所需的高效特征表示，这正是它与传统机器学习算法最关键的区别。
-
-此外，本阶段虽然名为机器学习，但我们将以神经网络的诞生作为终点，为你平滑过渡到下一阶段的深度学习。
+> 可以去实验室面试了。
 
 ## 学习内容
 
-本轮的学习内容将围绕一系列经典的机器学习模型与概念展开，最终导向对神经网络机制的理解：
+从经典机器学习到深度学习。
 
-- 分类器基础：K-Nearest Neighbor（k-NN, K-近邻）、Support Vector Machine（SVM, 支持向量机）、Softmax Classifier（Softmax 分类器）、XGBoost、Random Forest（随机森林）
-- 神经网络核心：Two-Layer Neural Network（两层神经网络）、Fully-Connected Networks（全连接网络）
-- 特征工程：Image Features（图像特征，包括 Histogram of Oriented Gradients、Color Histograms）
+- KNN
+- SVM
+- Softmax Classifier
+- XGBoost
+- Random Forest
+- CNN
+- RNN
+- GAN
+- Transformer
+- LSTM
 
 ## 学习要求
 
@@ -50,13 +45,9 @@
 
 ## 作业
 
-对于本次作业，你需要完成 2 篇文档以及 1 个 CS231n 的作业。
+对于本次作业，你需要完成 5 篇文档，作业 1 - 3。
 
-### 文档 1
-
-介绍 K-Nearest Neighbor（k-NN, K-近邻）、Support Vector Machine（SVM, 支持向量机）、Softmax Classifier（Softmax 分类器）、XGBoost、Random Forest（随机森林）这五种机器学习算法的原理和使用场景，并指出这些算法与神经网络的区别。
-
-### 文档 2
+### 文档 1 - 生成式 AI 的训练流程
 
 阅读[李宏毅生成式人工智能教程课本](https://github.com/datawhalechina/leegenai-tutorial/releases)，寻找文章片段，并且以文档形式讲述大语言模型的整个训练流程。
 
@@ -66,9 +57,57 @@
 > 2. 监督式学习（Supervised Fine-tuning）
 > 3. 人类反馈强化学习（RLHF）
 
-### 作业 1 - CS231n Assignment 1
+### 文档 2 - 传统机器学习算法之间的区别
+
+介绍 K-Nearest Neighbor（k-NN, K-近邻）、Support Vector Machine（SVM, 支持向量机）、Softmax Classifier（Softmax 分类器）、XGBoost、Random Forest（随机森林）这五种机器学习算法的原理和使用场景，并指出这些算法与神经网络的区别。
+
+> 这里简要解释传统机器学习与深度学习的区别。二者最核心的区别在于如何学习和利用数据的「特征」。
+>
+> 例如，决策树和随机森林基于预先定义的特征（如气象状态、温度范围等），通过一系列逻辑判断逐步推理出结论，整个决策过程直观且可解释。
+>
+> 而支持向量机则更为抽象，它试图在数据之间找到一个最优的分界超平面。这种通过数学优化寻找复杂边界的思想，与神经网络通过调整权重来划分数据的逻辑具有相似性。
+>
+> 深度学习最根本的优势在于其强大的「自动特征提取」能力。我们不再需要手动设计特征，深度神经网络能够从原始数据中逐层抽象和学习出解决问题所需的高效特征表示，这正是它与传统机器学习算法最关键的区别。
+>
+> 对于基于树的复杂集成算法（如随机森林、XGBoost、决策树），由于其实现逻辑与神经网络差异较大，只需要了解原理并掌握 [scikit-learn](https://scikit-learn.org/stable/) 即可，无需从零实现。
+>
+> 但对于线性分类器（k-NN, SVM, Softmax），它们是理解神经网络损失函数和梯度下降的基石，你需要在作业 1 中实现。
+
+### 作业 1 - Two-layer Neural Network
+
+本轮作业的核心目标是让你从零实现一个两层神经网络，并且通过这个过程来深入理解神经网络的基本原理和反向传播算法。
 
 完成 [CS231n Assignment 1](https://cs231n.github.io/assignments2025/assignment1/)，并且写一份文档来描述你在完成作业过程中遇到的挑战和解决方案。
+
+### 作业 2 - CNN
+
+在你完成了作业 1 之后，你将成功实现了一个简单的二层神经网络，并在 CIFAR-10 数据集上进行了训练。
+
+然而，现实世界中的神经网络远比两层神经网络复杂得多。为了应对更复杂的任务，我们需要引入更多的层次、更复杂的结构，以及更高效的训练方法。
+
+CNN 是深度学习中最重要的网络结构之一，广泛应用于计算机视觉任务中。通过卷积操作，CNN 能够有效地捕捉图像中的空间特征，从而大幅提升图像分类、目标检测等任务的性能。
+
+因此作业 2 是 CNN 相关，并且探索现代深度学习框架（如 PyTorch）的使用方法。
+
+完成 [CS231n Assignment 2](https://cs231n.github.io/assignments2025/assignment2/)，并且写一份文档来描述你在完成作业过程中遇到的挑战和解决方案。
+
+> 完成这次作业后请思考，我们为什么需要 PyTorch 这样的框架？
+
+### 作业 3 - CV / LLM
+
+人工智能的研究方向主要分为计算机视觉和自然语言处理，当然也包括其他更多方向。
+
+鉴于每个人的时间和精力有限，在完成了作业 2 之后，你可以选择继续完成 CS231n 的作业，深入学习计算机视觉相关的内容；或者转向 CS224n，探索自然语言处理领域的知识。
+
+不过对于本科生而言，建议都尝试一下。
+
+福大比较强的实验室基本都是 CV 的，所以我更推荐你选择 CV。
+
+完成 [CS231n Assignment 3](https://cs231n.github.io/assignments2025/assignment3/)，并且写一份文档来描述你在完成作业过程中遇到的挑战和解决方案。
+
+完成 [CS224n](https://web.stanford.edu/class/cs224n/)，并且写一份文档来描述你在完成作业过程中遇到的挑战和解决方案。
+
+> 建议选择 LLM 路线的同学先完成 cs224n 的前三个 assignment，然后再去完成 cs231n（毕竟都写了前两个了，而且有些东西是通用的）
 
 ## 推荐教程与参考资料
 
@@ -123,7 +162,23 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 2. 如果觉得 CS231n 的数学推导过多，建议观看[李宏毅老师的机器学习课程](https://www.bilibili.com/video/BV1Wv411h7kN/)，该课程更侧重于从直观角度理解模型原理
 3. [吴恩达老师的机器学习视频](https://www.bilibili.com/video/BV1owrpYKEtP/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
 
-#### 配环境
+#### CS231n Assignment 3 相关链接
+
+1. [跟李沐学AI 54 循环神经网络 RNN【动手学深度学习v2】](https://www.bilibili.com/video/BV1D64y1z7CA/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
+
+2. [跟李沐学AI 57 长短期记忆网络（LSTM）【动手学深度学习v2】](https://www.bilibili.com/video/BV1JU4y1H7PC?spm_id_from=333.788.recommend_more_video.4&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
+
+3. [跟李沐学AI GAN论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1rb4y187vD/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
+
+4. [跟着李沐学AI Transformer论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1pu411o7BE/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
+
+5. [自监督式学习](https://www.bilibili.com/video/BV1m3411p7wD?spm_id_from=333.788.videopod.episodes&vd_source=0272bb7dd0d8d9302c55fc082442b9e3&p=46)
+
+6. [【Transformer 其实是个简单到令人困惑的模型【白话DeepSeek-06】](https://www.bilibili.com/video/BV1C3dqYxE3q/?share_source=copy_web&vd_source=3fbbb3c2ad24817002f9c39fad247a3b)
+
+7. [68 Transformer【动手学深度学习v2】](https://www.bilibili.com/video/BV1Kq4y1H7FL/?p=2&share_source=copy_web&vd_source=3fbbb3c2ad24817002f9c39fad247a3b)
+
+#### 配环境 - CS231n
 
 学习 CS231n 需要配置环境，这里主要推荐两条路线。
 
@@ -176,6 +231,25 @@ bcdedit /set hypervisorlaunchtype off
 注意是重启，大部分没经过特别设置的 Windows，关机等同于深度睡眠，并不会修改你的系统设置。
 
 > 更新中。
+
+### CS224n
+
+#### CS224n 相关链接
+
+0. [cs224n](https://www.bilibili.com/video/BV1vQMBz6EvP/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)，能够理解 ppt 和论文的可以不用看视频
+1. [跟李沐学AI 词向量（word2vec）【动手学深度学习v2】](https://www.bilibili.com/video/BV1sY4y1572C/)
+2. [跟李沐学AI 注意力机制【动手学深度学习v2】](https://www.bilibili.com/video/BV1ui4y1j783/)
+3. [跟李沐学AI Transformer论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1pu411o7BE/)
+4. [【Transformer 其实是个简单到令人困惑的模型【白话DeepSeek-06】】](https://www.bilibili.com/video/BV1C3dqYxE3q/)
+5. [台大李宏毅老师 机器学习2021（Self-Attention和Transformer部分）](https://www.bilibili.com/video/BV1JA411X76s?p=65)
+
+#### 配环境 - CS224n
+
+CS224n 的环境默认是本地配置，当然你也可以选择使用 Colab。
+
+如果你选择使用 Colab，可以参考[ShaddockNH3/CS224N-Nyan-Book](https://github.com/ShaddockNH3/CS224N-Nyan-Book)
+
+如果你选择使用本地配置，那么官方文档会提供帮助
 
 #### 学习路径建议
 
