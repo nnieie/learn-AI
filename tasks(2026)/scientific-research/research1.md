@@ -184,35 +184,50 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 
 - 使用 Colab
 
-如果你的电脑配置较低（没有 GPU），建议使用 Google Colab。
+  如果你的电脑配置较低（没有 GPU），建议使用 Google Colab。
 
-CS231n 官方和 Google 有合作，只要你有 Google 账号，就可以直接使用 Colab 环境完成作业。
+  CS231n 官方和 Google 有合作，只要你有 Google 账号，就可以直接使用 Colab 环境完成作业。
 
-打开 CS231n [24 Spring Assignment 1](https://cs231n.github.io/assignments2024/assignment1/) 页面或者 [25 Spring Assignment 1](https://cs231n.github.io/assignments2025/assignment1/) 页面，然后观看 Setup 这个视频，按照视频中的步骤操作即可。
+  打开 CS231n [24 Spring Assignment 1](https://cs231n.github.io/assignments2024/assignment1/) 页面或者 [25 Spring Assignment 1](https://cs231n.github.io/assignments2025/assignment1/) 页面，然后观看 Setup 这个视频，按照视频中的步骤操作即可。
 
-这里直接给出这个视频的链接：[CS231N Google Colab Assignment Workflow Tutorial](https://www.youtube.com/watch?v=DsGd2e9JNH4&source_ve_path=MjM4NTE&embeds_referring_euri=https%3A%2F%2Fcs231n.github.io%2F)
+  这里直接给出这个视频的链接：[CS231N Google Colab Assignment Workflow Tutorial](https://www.youtube.com/watch?v=DsGd2e9JNH4&source_ve_path=MjM4NTE&embeds_referring_euri=https%3A%2F%2Fcs231n.github.io%2F)
 
 - 本地配置环境
 
-本地配置环境的推荐前提是有一台性能较好的电脑，最好有 NVIDIA 显卡（支持 CUDA）。
+  本地配置环境的推荐前提是有一台性能较好的电脑，最好有 NVIDIA 显卡（支持 CUDA）。
 
-如果你是 Linux 或 Mac 用户，推荐直接使用系统自带的终端进行配置。
+  如果你是 Linux 或 Mac 用户，推荐直接使用系统自带的终端进行配置。
 
-如果你是 Windows 用户，可以考虑使用 Windows Subsystem for Linux（WSL2），不推荐直接在 Windows 系统下进行环境配置。
+  如果你是 Windows 用户，可以考虑使用 Windows Subsystem for Linux（WSL2），不推荐直接在 Windows 系统下进行环境配置。
 
-不推荐使用 Linux 虚拟机，因为虚拟机的性能通常较差，可能无法满足深度学习的需求。
+  不推荐使用 Linux 虚拟机，因为虚拟机的性能通常较差，可能无法满足深度学习的需求。
 
-如果你执意要直接使用 Windows，可以参考[weijianxian CS231n 2025 spring 的环境配置](https://github.com/weijianxian/cs231n-25)，该方法使用 uv，也可以使用传统的 venv。
+  如果你执意要直接使用 Windows，可以参考[weijianxian CS231n 2025 spring 的环境配置](https://github.com/weijianxian/cs231n-25)，该方法使用 uv，也可以使用传统的 venv。
 
-如果你想采用 Windows + conda 的方式进行配置，可以参考[rechenz CS231n 2025 spring 的环境配置](https://github.com/rechenz/SetupLocal-for-cs231n-25)。
+  如果你想采用 Windows + conda 的方式进行配置，可以参考[rechenz CS231n 2025 spring 的环境配置](https://github.com/rechenz/SetupLocal-for-cs231n-25)。
 
-个人推荐使用 WSL2，微软官方有详细的[安装教程](https://learn.microsoft.com/zh-cn/windows/wsl/install)。
+  个人推荐使用 WSL2，微软官方有详细的[安装教程](https://learn.microsoft.com/zh-cn/windows/wsl/install)。
 
-这里贴出来几个下载 WSL2 碰到的常见的问题以及解决方案，如果你是 Linux 或者 Mac 用户，可以跳过这部分。
+  这里贴出来几个下载 WSL2 碰到的常见的问题以及解决方案，如果你是 Linux 或者 Mac 用户，可以跳过这部分。
 
 - 关于跨系统文件访问
 
   跨系统文件访问很慢，如果你的程序需要大量 I/O 操作，请将项目复制到 Linux 文件目录下执行。
+
+  例如你如果直接在桌面上打开 WSL2，你可能的路径是这样的：
+
+  ```bash
+  /mnt/d/desktop/github/learn-AI
+  ```
+
+  这时候你需要将项目复制到 Linux 文件目录下，例如：
+
+  ```bash
+  cp -r /mnt/d/desktop/github/learn-AI ~/
+  cd ~/learn-AI
+  ```
+
+  这样就可以在 Linux 文件目录下执行了。
 
 - 我配完 WSL2 后，手机模拟器（例如 mumu 模拟器）非常卡顿，怎么办？
 
@@ -251,11 +266,11 @@ CS231n 官方和 Google 有合作，只要你有 Google 账号，就可以直接
 
 CS224n 的环境默认是本地配置，当然你也可以选择使用 Colab。
 
-如果你选择使用 Colab，可以参考[ShaddockNH3/CS224N-Nyan-Book](https://github.com/ShaddockNH3/CS224N-Nyan-Book)。
+如果你选择使用 Colab，可以参考 [ShaddockNH3/CS224N-Nyan-Book](https://github.com/ShaddockNH3/CS224N-Nyan-Book)。
 
 如果你选择使用本地配置，官方文档会提供帮助。
 
-#### 学习路径建议
+### 学习路径建议
 
 1. 适应英文环境：积极适应全英文的学习材料。建议不要使用浏览器的全文自动翻译，可以安装划词翻译插件，强制自己阅读原文，只在遇到生词时进行查询。
 2. 研读课程笔记（Notes）：CS231n 的课程 Notes 是完成作业的重要学习资源，内容详实且深入。请务必花费时间仔细阅读，这是理解所有模型原理的基础。
