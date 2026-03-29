@@ -1,4 +1,4 @@
-# Task 4 - Application 1 简单 AI 应用
+# Application 1 - 简单 AI 应用
 
 > 预计耗时：30 天
 

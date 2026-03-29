@@ -9,21 +9,17 @@
 
 task 0 和 task 1 预计完成时间为 11 月初，task 2 和 task 3 预计完成时间为 12 月初。
 
-如果你选择了 scientific research 的路线，那么 task 4 - 6 的预计完成时间为 6 月初，task 7 的预计完成时间为 8 月初。
+如果你选择了 scientific research 的路线，那么 research 1 的预计完成时间为 4 月初，research 2 的预计完成时间为 5 月初，research 3 的预计完成时间为 6 月初。
 
-如果你选择了 application 的路线 ...
-
-> 待定。
+如果你选择了 application 的路线，那么 application 1 的预计完成时间为 2 月初，application 2 的预计完成时间为 4 月初，application 3 的预计完成时间为 6 月初。
 
 ## 答辩
 
 task 0 - task 3 的答辩预计在 12 月中旬进行。
 
-如果你选择了 scientific research 的路线，那么 task 4 - task 6 的答辩预计在 6 月中旬进行。 task 7 的答辩预计在 8 月中旬进行。
+如果你选择了 scientific research 的路线，那么 research 1 的答辩预计在 4 月中旬进行，research 2 的答辩预计在 5 月中旬进行，research 3 的答辩预计在 6 月中旬进行。
 
-如果你选择了 application 的路线 ...
-
-> 待定。
+如果你选择了 application 的路线，那么 application 1 的答辩预计在 2 月中旬进行，application 2 的答辩预计在 4 月中旬进行，application 3 的答辩预计在 6 月中旬进行。
 
 如果你提前完成了作业（指的是 task 4 开始往后），那么可以提前答辩。
 

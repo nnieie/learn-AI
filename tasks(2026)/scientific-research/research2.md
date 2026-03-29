@@ -1,4 +1,4 @@
-# Research 2 - 训练自己的模型
+# Research 2
 
 > 预计耗时：30 天
 
