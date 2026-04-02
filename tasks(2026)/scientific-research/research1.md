@@ -1,4 +1,4 @@
-# Research 1 - 从机器学习到深度学习
+﻿# Research 1 - 从机器学习到深度学习
 
 > 预计耗时：90 天
 
@@ -247,14 +247,14 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 
   具体而言，WSL2 是基于 Hyper-V 的虚拟化技术，而大多数手机模拟器是基于 VirtualBox 或者其他虚拟化技术实现的，这两种虚拟化技术是冲突的，所以会导致手机模拟器非常卡顿。
 
-  解决方法有两种：一种是使用蓝叠模拟器或谷歌模拟器（Beta 开发中）等支持 Hyper-V 的模拟器；另一种是按 `Win + Shift + R`，输入 `cmd` 后，再按 `Win + Shift + Enter` 进入管理员模式：
+  解决方法有两种：一种是使用蓝叠模拟器或谷歌模拟器（Beta 开发中）等支持 Hyper-V 的模拟器；另一种是按 `Win + R`，输入 `cmd` 后，再按 `Ctrl + Shift + Enter` 进入管理员模式：
 
   ```bash
   只能使用 wsl 时
-  cdedit /set hypervisorlaunchtype auto
+  bcdedit /set hypervisorlaunchtype auto
 
   使用 mumu 模拟器时
-  cdedit /set hypervisorlaunchtype off
+  bcdedit /set hypervisorlaunchtype off
   ```
 
   然后重启。
